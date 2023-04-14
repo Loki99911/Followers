@@ -1,11 +1,11 @@
-import { HomeContainer, HomeText, TweetsLink } from "./Home.styled";
+import { HomeArrow, HomeContainer, HomeText, TweetsLink } from "./Home.styled";
 
 const Home = () => {
   return (
     <HomeContainer>
       <HomeText>
         Welcome to Tweet Counter! To start viewing new users, click the button
-        below
+        below <HomeArrow />
       </HomeText>
       <TweetsLink to="/tweets">View users</TweetsLink>
     </HomeContainer>

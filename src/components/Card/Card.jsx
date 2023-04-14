@@ -1,15 +1,31 @@
-import logo from '../../../assets/CardLogo.svg';
-export const Card = (photo, tweets, followers) => {
+import logo from '../../images/CardLogo.svg';
+import {
+  CardBtn,
+  CardLogo,
+  CardWrap,
+  CenterPart,
+  LowPart,
+  LowPartText,
+  UpperPart,
+  UserImg,
+  UserImgThumb,
+} from './Card.styled';
+export const Card = ({ photo, tweets, followers }) => {
   return (
-    <div>
-      <div>
-        <img src={logo} alt="logo" />
-      </div>
-      <div>
-        <p>{tweets + ' TWEETS'}</p>
-        <p>{followers + ' FOLLOWERS'}</p>
-        <button type="button"></button>
-      </div>
-    </div>
+    <CardWrap>
+      <UpperPart>
+        <CardLogo src={logo} alt="logo GoIt" />
+      </UpperPart>
+      <CenterPart>
+        <UserImgThumb>
+          <UserImg src={photo} alt="UserPhoto" />
+        </UserImgThumb>
+      </CenterPart>
+      <LowPart>
+        <LowPartText>{tweets + ' Tweets'}</LowPartText>
+        <LowPartText>{followers + ' Followers'}</LowPartText>
+        <CardBtn type="button">Follow</CardBtn>
+      </LowPart>
+    </CardWrap>
   );
 };
