@@ -31,3 +31,19 @@ const arrowAnimation = keyframes`
 export const TweetsArrow = styled(AiOutlineArrowLeft)`
   animation: ${arrowAnimation} 1s infinite;
 `;
+
+export const TweetsBlock = styled.div`
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  row-gap:20px;
+  grid-template-columns: 1fr;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (min-width: 1280px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+`;

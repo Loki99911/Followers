@@ -10,7 +10,22 @@ import {
   UserImg,
   UserImgThumb,
 } from './Card.styled';
-export const Card = ({ photo, tweets, followers }) => {
+export const Card = ({
+  followingUser,
+  setFollowing,
+  photo,
+  tweets,
+  followers,
+  id,
+}) => {
+  const followUser = () => {
+    if (!followingUser) {
+      setFollowing(prev => [...prev, id]);
+    } else {
+      setFollowing(prev => prev.filter(element => element !== id));
+    }
+  };
+
   return (
     <CardWrap>
       <UpperPart>
@@ -23,8 +38,16 @@ export const Card = ({ photo, tweets, followers }) => {
       </CenterPart>
       <LowPart>
         <LowPartText>{tweets + ' Tweets'}</LowPartText>
-        <LowPartText>{followers + ' Followers'}</LowPartText>
-        <CardBtn type="button">Follow</CardBtn>
+        <LowPartText>
+          {(!followingUser ? followers : followers + 1) + ' Followers'}
+        </LowPartText>
+        <CardBtn
+          type="button"
+          onClick={followUser}
+          followingUser={followingUser}
+        >
+          {followingUser ? 'Following' : 'Follow'}
+        </CardBtn>
       </LowPart>
     </CardWrap>
   );
