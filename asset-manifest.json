@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-homework-template/static/css/main.1a15085e.css",
-    "main.js": "/react-homework-template/static/js/main.fe608c2c.js",
-    "static/media/CardBG.png": "/react-homework-template/static/media/CardBG.b3d9942b3f9d5dad1ff0.png",
-    "static/media/CardLogo.svg": "/react-homework-template/static/media/CardLogo.e917114d7945c04c85a8946a331d28b6.svg",
-    "index.html": "/react-homework-template/index.html",
-    "main.1a15085e.css.map": "/react-homework-template/static/css/main.1a15085e.css.map",
-    "main.fe608c2c.js.map": "/react-homework-template/static/js/main.fe608c2c.js.map"
+    "main.css": "/Followers/static/css/main.1a15085e.css",
+    "main.js": "/Followers/static/js/main.74fbc9c2.js",
+    "static/media/CardBG.png": "/Followers/static/media/CardBG.b3d9942b3f9d5dad1ff0.png",
+    "static/media/CardLogo.svg": "/Followers/static/media/CardLogo.e917114d7945c04c85a8946a331d28b6.svg",
+    "index.html": "/Followers/index.html",
+    "main.1a15085e.css.map": "/Followers/static/css/main.1a15085e.css.map",
+    "main.74fbc9c2.js.map": "/Followers/static/js/main.74fbc9c2.js.map"
   },
   "entrypoints": [
     "static/css/main.1a15085e.css",
-    "static/js/main.fe608c2c.js"
+    "static/js/main.74fbc9c2.js"
   ]
 }
