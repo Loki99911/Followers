@@ -32,16 +32,14 @@ const Tweets = () => {
         const allUsers = await getUsers();
         setUsers(allUsers);
       } catch (error) {
-        alert(error.message)
+        alert(error.message);
       } finally {
         setIsLoading(false);
       }
     }
     getAllUsers();
     const savedArray = JSON.parse(localStorage.getItem('followingArray'));
-    if (savedArray.length > 0) {
-      setFollowing(savedArray);
-    }
+    setFollowing(savedArray);
   }, []);
 
   useEffect(() => {
