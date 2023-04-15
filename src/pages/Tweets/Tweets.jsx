@@ -38,12 +38,12 @@ const Tweets = () => {
       }
     }
     getAllUsers();
+
     const savedArray = JSON.parse(localStorage.getItem('followingArray'));
-    setFollowing(savedArray);
+    if (savedArray) setFollowing(savedArray);
   }, []);
 
-  useEffect(() => {
-    if (following !== null) localStorage.setItem('followingArray', JSON.stringify(following));
+  useEffect(() => {localStorage.setItem('followingArray', JSON.stringify(following));
   }, [following]);
 
   const loadMore = () => {
