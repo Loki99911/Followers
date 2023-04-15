@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import logo from '../../images/CardLogo.svg';
 import {
   CardBtn,
@@ -18,6 +19,7 @@ export const Card = ({
   followers,
   id,
 }) => {
+  const [btnIsHovered, setBtnIsHovered] = useState(false);
   const followUser = () => {
     if (!followingUser) {
       setFollowing(prev => [...prev, id]);
@@ -26,25 +28,37 @@ export const Card = ({
     }
   };
 
+  const handleHover = () => {
+    setBtnIsHovered(true);
+  };
+
+  const handleLeave = () => {
+    setBtnIsHovered(false);
+  };
+
   return (
     <CardWrap>
       <UpperPart>
         <CardLogo src={logo} alt="logo GoIt" />
       </UpperPart>
       <CenterPart>
-        <UserImgThumb>
+        <UserImgThumb btnIsHovered={btnIsHovered}>
           <UserImg src={photo} alt="UserPhoto" />
         </UserImgThumb>
       </CenterPart>
       <LowPart>
-        <LowPartText>{tweets + ' Tweets'}</LowPartText>
+        <LowPartText>{tweets.toLocaleString('en-US') + ' Tweets'}</LowPartText>
         <LowPartText>
-          {(!followingUser ? followers : followers + 1) + ' Followers'}
+          {(!followingUser
+            ? followers.toLocaleString('en-US')
+            : (followers + 1).toLocaleString('en-US')) + ' Followers'}
         </LowPartText>
         <CardBtn
           type="button"
           onClick={followUser}
           followingUser={followingUser}
+          onMouseEnter={handleHover}
+          onMouseLeave={handleLeave}
         >
           {followingUser ? 'Following' : 'Follow'}
         </CardBtn>

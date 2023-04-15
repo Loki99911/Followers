@@ -1,10 +1,11 @@
-import { AiOutlineTwitter } from 'react-icons/ai';
-import { HeaderContainer } from './Header.styled';
+
+import { HeaderContainer, HeaderIcon, HeaderText } from './Header.styled';
 
 export const Header = () => {
     return (
       <HeaderContainer>
-        <AiOutlineTwitter /> Tweet Counter
+        <HeaderIcon />
+        <HeaderText>Tweet-follower</HeaderText>
       </HeaderContainer>
     );
 };
