@@ -43,7 +43,7 @@ const Tweets = () => {
   }, []);
 
   useEffect(() => {
-    localStorage.setItem('followingArray', JSON.stringify(following));
+    if (following !== null) localStorage.setItem('followingArray', JSON.stringify(following));
   }, [following]);
 
   const loadMore = () => {
