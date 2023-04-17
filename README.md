@@ -34,7 +34,7 @@ The project is built with [React](https://react.dev/) using [Axios](https://axio
 ***
 
 ## Developed by:
-_Juniog Frontend Developer Nikita Kresik_:
-**[GitHub](https://loki99911.github.io)**
+_Juniog Frontend Developer - Nikita Kresik_:
+**[GitHub](https://loki99911.github.io)**,
 **[Linkedin](https://www.linkedin.com/feed/)**
 ***
