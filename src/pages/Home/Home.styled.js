@@ -20,6 +20,11 @@ export const TweetsLink = styled(NavLink)`
   border-radius: 10px;
   padding: 14px 39px;
   background-color: #5cd3a8;
+  transition: transform 300ms ease-in-out;
+  :hover,
+  :focus {
+    transform: scale(1.1);
+  }
 `;
 
 const arrowAnimation = keyframes`

@@ -15,6 +15,11 @@ export const HomeLink = styled(NavLink)`
   padding: 14px 39px;
   background-color: #5cd3a8;
   margin-right: 20px;
+  transition: transform 300ms ease-in-out;
+  :hover,
+  :focus {
+    transform: scale(1.1);
+  }
 `;
 
 const arrowAnimation = keyframes`
@@ -72,6 +77,11 @@ export const LoadMoreBtn = styled.button`
   padding: 15px;
   border-radius: 10px;
   background-color: #5cd3a8;
+  transition: transform 300ms ease-in-out;
+  :hover,
+  :focus {
+    transform: scale(1.1);
+  }
 `;
 
 const arrowAnimationLoadMore = keyframes`

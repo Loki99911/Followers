@@ -58,7 +58,7 @@ const Tweets = () => {
           <TweetsArrow />
           Go Home
         </HomeLink>
-        <DropDown selected={selectedOption} setSelected={setSelectedOption} />
+        <DropDown selected={selectedOption} setSelected={setSelectedOption}/>
       </TweetsActions>
       {isLoading ? (
         <Loader />
