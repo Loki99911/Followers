@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Followers/static/css/main.1a15085e.css",
-    "main.js": "/Followers/static/js/main.6dd57271.js",
+    "main.js": "/Followers/static/js/main.31fe8d98.js",
     "static/media/CardBG.png": "/Followers/static/media/CardBG.b3d9942b3f9d5dad1ff0.png",
     "static/media/CardLogo.svg": "/Followers/static/media/CardLogo.e917114d7945c04c85a8946a331d28b6.svg",
     "index.html": "/Followers/index.html",
     "main.1a15085e.css.map": "/Followers/static/css/main.1a15085e.css.map",
-    "main.6dd57271.js.map": "/Followers/static/js/main.6dd57271.js.map"
+    "main.31fe8d98.js.map": "/Followers/static/js/main.31fe8d98.js.map"
   },
   "entrypoints": [
     "static/css/main.1a15085e.css",
-    "static/js/main.6dd57271.js"
+    "static/js/main.31fe8d98.js"
   ]
 }
