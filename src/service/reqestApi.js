@@ -1,5 +1,7 @@
 import axios from 'axios';
-axios.defaults.baseURL = 'https://6436fad18205915d3401dcba.mockapi.io';
+const apiUrl = process.env.REACT_APP_BASE_URL;
+axios.defaults.baseURL = apiUrl;
+// axios.defaults.baseURL = 'https://6436fad18205915d3401dcba.mockapi.io';
 
 export const getUsers = async () => {
   try {
