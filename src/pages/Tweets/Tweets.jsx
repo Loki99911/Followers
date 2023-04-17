@@ -38,7 +38,6 @@ const Tweets = () => {
       }
     }
     getAllUsers();
-
     const savedArray = JSON.parse(localStorage.getItem('followingArray'));
     if (savedArray) setFollowing(savedArray);
   }, []);

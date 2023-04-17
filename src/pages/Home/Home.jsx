@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <HomeContainer>
       <HomeText>
-        Welcome to Tweet Counter! To start viewing new users, click the button
+        Welcome to Tweet-follower! To start viewing new users, click the button
         below <HomeArrow />
       </HomeText>
       <TweetsLink to="/tweets">View users</TweetsLink>
