@@ -1,4 +1,3 @@
-
 import { HeaderContainer, HeaderIcon, HeaderText } from './Header.styled';
 
 export const Header = () => {
